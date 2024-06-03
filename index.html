@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <section class="Dg-container">
+        <div class="Dg">
+            <div class="Dg-left">
+                <h4 class="Dg-heading">AWARD WINNING</h4>
+                <p class="Dg-agency">DIGITAL MARKETING AGENCY</p>
+                <p class="Dg-para">Lorem, ipsum dolor sit amet consectetur adipisicing elit.Fuga reiciendis     necessitatibus? Veniam earum delectus voluptatem quos asperiores ducimus quisquam.
+                </p>
+                <button id="openPopup">CONTACT US</button>
+                <div id="popup" class="popup">
+                    <div class="popup-content">
+                      <span class="close" id="closePopup">&times;</span>
+                      <h4>Talk to us</h4>
+                      <form class="form-container" id="myForm" method="POST">
+                        <input type="email" placeholder="Work email*" class="form-email" id="email" name="email" required/>
+                        <span class="error" id="emailError">This field is required</span>
+                        <div class="form-name">
+                          <input type="text" placeholder="First name*" class="form-first" id="firstname" name="firstname" required />
+                          <span class="error" id="firstnameError">This field is required</span>
+                          <input type="text" placeholder="Last name*" class="form-last" id="lastname" name="lastname" required/>
+                          <span class="error" id="lastnameError">This field is required</span>
+                        </div>
+                        <input type="checkbox" id="terms" name="terms" required/><span style="padding-left: 5px; color: rgb(116, 111, 111);">I agree to Fyle's term and conditions, and provide consent to send me communication</span>
+                        <span class="error" id="termsError">This field is required</span>
+                        <button class="popup-btn" type="submit" id="submitBtn" disabled>Contact Us</button>
+                      </form>
+                    </div>
+                </div>
+            </div>
+            <div class="Dg-right">
+                <image src="images/amazon.png" style="height: 380px; width: 300px; border-radius: 5px;"/>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="services-container">
+        <div class="services">
+            <div class="services-heading">
+               <h4>WHAT WE DO</h4>
+               <p>SERVICES PROVIDE FOR YOU</p>
+            </div>
+            <div class="services-para">
+               <p>Morbi sed lacus nec risus finibus et fermentum nibh. Pellentesque vitae ante at elit fringilla ac at purus.Morbi sed lacus nec risus finibus feugiat et fermentum</p>
+            </div>
+        </div>
+        <div class="carousel-entry">
+          <div class="carousel-container">
+            <div class="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item"><img src="images/sarah-chai.jpg" alt="Image 1"></div>
+                <div class="carousel-item"><img src="images/winter.jpg" alt="Image 2"></div>
+                <div class="carousel-item"><img src="images/fragrance.webp" alt="Image 3"></div>
+                <div class="carousel-item"><img src="images/lara-jem.jpg" alt="Image 4"></div>
+                <div class="carousel-item"><img src="images/fauxels.jpg" alt="Image 5"></div>
+                <div class="carousel-item"><img src="images/canvastud.jpg" alt="Image 6"></div>
+                <div class="carousel-item"><img src="images/artempod.jpg" alt="Image 7"></div>
+              </div>
+            </div>
+            <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+          </div>
+        </div>
+    </section>
+
+
+    <section class="Choose-container">
+        <h4 class="choose-heading">WHY CHOOSE US</h4>
+        <p class="choose-sub-heading">WHY WE ARE BEST</p>
+        <div class="choose-topics">
+            <div class="choose-target">
+              <image src="images/aim.png" style="height: 90px; width: 90px; margin-bottom: 10px;"/>
+              <p class="choose-topic-heading">Clarified Vision & Target</p>
+              <p class="choose-topic-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, at?</p>
+            </div>
+            <div class="choose-target">
+              <image src="images/barometer.png" style="height: 90px; width: 90px; margin-bottom: 10px;"/>
+              <p class="choose-topic-heading">High Performance</p>
+              <p class="choose-topic-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, at?</p>
+            </div> 
+            <div class="choose-target">
+              <image src="images/protection.png" style="height: 90px; width: 90px; margin-bottom: 10px;"/>
+              <p class="choose-topic-heading">Maintain Security</p>
+              <p class="choose-topic-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, at?</p>
+            </div>
+            <div class="choose-target">
+               <image src="images/petri-dish.png" style="height: 90px; width: 90px; margin-bottom: 10px;"/>
+               <p class="choose-topic-heading">Better Strategy & Quality</p>
+               <p class="choose-topic-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, at?</p>
+            </div>
+        </div>
+        <h4 class="choose-heading">OUR PROJECT</h4>
+        <p class="choose-sub-heading">WHY WE ARE BEST</p>
+        <div class="project">
+            <div class="project-image">
+               <image src="images/nutrition.jpg" style="height: 370px; width: 730px; border-radius: 5px;"/>
+            </div>
+            <div class="project-details">
+                <div>
+                    <h4 class="project-heading">Genderless Kei - Japan's Hot</h4>
+                    <p class="project-para">Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+                </div>
+                <div>
+                    <h4 class="project-heading">Better Strategy & Quality</h4>
+                    <p class="project-para">Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+                </div>
+                <div>
+                    <h4 class="project-heading">Genderless Kei - Japan's Hot</h4>
+                    <p class="project-para">Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="expert-container">
+        <h4 class="choose-heading">EXPERTS GROWTHS</h4>
+        <p class="choose-sub-heading">WHY WE ARE BEST</p>
+        <div class="company-growth">
+            <div class="company-growth-one">
+                <i class="fa-solid fa-heart" style="color: #ff0000; font-size: 25px;"></i>
+                <p style="font-size: 30px;" >199+</p>
+                <P>Staticfied Customers</P>
+            </div>
+            <div class="company-growth-two">
+                <i class="fa-solid fa-clock" style="color: #ff0000; font-size: 25px;"></i>
+                <p style="font-size: 30px;">1591+</p>
+                <p style="color: rgb(48, 44, 44)">Days Of Operations</p>
+            </div>
+            <div class="company-growth-three">
+                <i class="fa-solid fa-circle-check" style="color: #ff0000; font-size: 25px;"></i>
+                <p style="font-size: 30px;">283+</p>
+                <p style="color: rgb(48, 44, 44)">Complete Project</p>
+            </div>
+            <div class="company-growth-four">
+                <i class="fa-solid fa-trophy" style="color: #ff0000; font-size: 25px;"></i>
+                <p style="font-size: 30px;">75+</p>
+                <p style="color: rgb(48, 44, 44)">Win Awards</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="feedback-container">
+        <h4 class="choose-heading">CLIENTS FEEDBACK</h4>
+        <p class="choose-sub-heading">PEOPLE SAY'S ABOUT US !</p>
+        <p class="feedback-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima saepe ipsam repudiandae itaque mollitia illum delectus obcaecati vitae nesciunt.</p>
+        <p style="color: #ff0000; position: relative; left: 344px;">JANNAT TUMPA <span style="color: gray;;">-COO,AMERIMAR ENTERPRISES, INC</span></p>
+    </section>
+    
+
+    <section class="footer">
+          <image src="images/Samsung.png" style="height: 100px; width: 100px;"/>
+          <image src="images/FSSAI.png" style="height: 50px; width: 100px;"/>
+          <image src="images/Spotify New 2024.png" style="height: 35px; width: 100px;"/>
+          <image src="images/Bajaj Finance.png" style="height: 100px; width: 100px;"/>
+          <image src="images/Pertamina.png" style="height: 100px; width: 100px;"/>
+          <image src="images/Google Ai Gemini.png" style="height: 100px; width: 100px;"/>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
